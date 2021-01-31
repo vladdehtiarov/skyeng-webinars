@@ -1,0 +1,76 @@
+// Master class section styles
+.master-class-section {
+    margin-top: 56px;
+    width: 100%;
+
+    // title
+    &__title {
+        font-size: 32px;
+        line-height: 100%;
+        position: relative;
+
+        p {
+            width: 150px;
+        }
+    }
+
+    // emoji
+
+    .emoji-wrapper {
+        position: absolute;
+        bottom: -10px;
+        left: 132px;
+    }
+
+    .emoji {
+        width: 40px;
+        height: 40px;
+    }
+
+  
+    // Slider 
+    &__slider {
+        margin-top: 27px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    // Master class section styles
+    .master-class-section {
+        padding-bottom: 70px;
+        margin-top: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        // title
+        &__title {
+            font-size: 64px;
+
+            p {
+                width: 356px;
+            }
+        }
+
+        // emoji
+
+        .emoji-wrapper {
+            margin-top: 8px;
+            position: relative;
+            bottom: auto;
+            left: auto;
+        }
+
+        .emoji {
+            width: 80px;
+            height: 80px;
+        }
+
+    
+        // Slider 
+        &__slider {
+            margin-top: 0;
+        }
+    }
+}

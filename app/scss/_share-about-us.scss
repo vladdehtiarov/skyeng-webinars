@@ -1,0 +1,56 @@
+// share-about-us styles
+
+.share-about-us {
+    margin: 40px 0 37px 0;
+    font-size: 24px;
+    line-height: 120%;
+
+    // Links
+    &__link {
+        color: $black;
+        text-decoration: underline;
+    }
+
+    span {
+        display: block; 
+    }
+
+    // span:nth-child(2) {
+        
+
+    //     @include responsive(desktop) {
+    //         display: inline-block;
+    //     }
+    // }
+}
+
+.share-about-us_friend {
+    width: 297px;
+
+    @include responsive(desktop) {
+        width: 644px;
+        font-size: 40px;
+    }
+
+    span {
+        display: inline-block;
+
+        @include responsive(desktop) { 
+            display: block;
+        }
+    }
+
+}
+
+@media screen and (min-width: 720px) { 
+    // share-about-us styles
+
+    .share-about-us {
+        margin: 104px 0 2px 0;
+        font-size: 40px;
+
+        span {
+            display: inline-block;
+        }
+    }
+}

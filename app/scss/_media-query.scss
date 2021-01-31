@@ -1,0 +1,84 @@
+
+
+@media screen and (min-width: 720px) { 
+
+    .container {
+        width: 90%;
+        max-width: 1159px;
+    }
+
+    // Page title stules
+    .page-title {
+        width: 100%;
+        position: relative;
+
+        // title
+        &__title {
+            width: 80%;
+            font-size: 80px;
+        }
+        
+        // sticker
+        &__sticker {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 82px;
+            left: 617px;
+        }
+    }
+
+       
+}
+
+// @media screen and (min-width: 720px) and (max-width: 1219px) {
+//     // Header styles
+//     .header {
+        
+//         .container {
+//             height: 13vw;
+//         }
+
+//         // Header logo styles 
+//         &__logo {
+//             width: 38vw;
+//             height: 5vw;
+//         }
+
+//         .company-logo {
+//             width: 15vw;
+//             &__img {
+//                 width: 3vw;
+//             }
+
+//             &__text {
+//                 width: 10vw;
+//             }
+//         }
+
+//         .client-logo {
+//             font-size: 2.7vw;
+//             padding-left: 1vw;
+//         }
+//         // Header info block styles
+//         &__info {
+//             font-size: 5vw;
+//         }
+
+//         // Header prompt styles
+//         &__prompt {
+//             width: 28vw;
+
+//             &-img {
+//                 width: 5vw;
+//             }
+
+//             &-text {
+//                 width: 23vw;
+//                 padding-left: 2px;
+//                 font-size: 2vw;
+//             }
+//         }
+//     }    
+// }
+

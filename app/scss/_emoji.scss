@@ -1,0 +1,429 @@
+.emoji {
+    display: inline-block;
+
+    @include boxSize(100px, 100px);
+
+    //spoke
+    &.emoji-spoke {
+        @include uploadEmoji(
+            '../images/emoji/emoji-spoke_desk.png',
+            '../images/emoji/emoji-spoke_desk@2x.png',
+            '../images/emoji/emoji-spoke_desk@3x.png'
+        );
+    }
+
+    // airplane
+    &.emoji-airplane {
+        @include uploadEmoji(
+            '../images/emoji/emoji-airplane_desk.png',
+            '../images/emoji/emoji-airplane_desk@2x.png',
+            '../images/emoji/emoji-airplane_desk@3x.png'
+        );
+    }
+
+     // book
+    &.emoji-book {
+        @include uploadEmoji(
+            '../images/emoji/emoji-book_desk.png',
+            '../images/emoji/emoji-book_desk@2x.png',
+            '../images/emoji/emoji-book_desk@3x.png'
+        );
+    }
+
+    // peace
+    &.emoji-peace {
+        @include uploadEmoji(
+            '../images/emoji/emoji-peace_desk.png',
+            '../images/emoji/emoji-peace_desk@2x.png',
+            '../images/emoji/emoji-peace_desk@3x.png'
+        );
+    }
+
+    // clock
+    &.emoji-clock {
+        @include uploadEmoji(
+            '../images/emoji/emoji-clock_desk.png',
+            '../images/emoji/emoji-clock_desk@2x.png',
+            '../images/emoji/emoji-clock_desk@3x.png'
+        );
+    }
+
+    // flag-uk
+    &.emoji-flag-uk {
+        @include uploadEmoji(
+            '../images/emoji/emoji-flag-uk_desk.png',
+            '../images/emoji/emoji-flag-uk_desk@2x.png',
+            '../images/emoji/emoji-flag-uk_desk@3x.png'
+        );
+    }
+
+    // fire
+    &.emoji-fire {
+        @include uploadEmoji(
+            '../images/emoji/emoji-fire_desk.png',
+            '../images/emoji/emoji-fire_desk@2x.png',
+            '../images/emoji/emoji-fire_desk@3x.png'
+        );
+    }
+
+    // gift
+    &.emoji-gift {
+        @include uploadEmoji(
+            '../images/emoji/emoji-gift_desk.png',
+            '../images/emoji/emoji-gift_desk@2x.png',
+            '../images/emoji/emoji-gift_desk@3x.png'
+        );
+    }
+
+    // blue
+    &.emoji-blue {
+        @include uploadEmoji(
+            '../images/emoji/emoji-blue_desk.png',
+            '../images/emoji/emoji-blue_desk@2x.png',
+            '../images/emoji/emoji-blue_desk@3x.png'
+        );
+    }
+
+    // orange
+    &.emoji-orange {
+        @include uploadEmoji(
+            '../images/emoji/emoji-orange_desk.png',
+            '../images/emoji/emoji-orange_desk@2x.png',
+            '../images/emoji/emoji-orange_desk@3x.png'
+        );
+    }
+
+    // mobile-phone
+    &.emoji-mobile-phone {
+        @include uploadEmoji(
+            '../images/emoji/emoji-mobile-phone_desk.png',
+            '../images/emoji/emoji-mobile-phone_desk@2x.png',
+            '../images/emoji/emoji-mobile-phone_desk@3x.png'
+        );
+    }
+
+    // microphone
+    &.emoji-microphone {
+        @include uploadEmoji(
+            '../images/emoji/emoji-microphone_desk.png',
+            '../images/emoji/emoji-microphone_desk@2x.png',
+            '../images/emoji/emoji-microphone_desk@3x.png'
+        );
+    }
+
+    // heart
+    &.emoji-heart {
+        @include uploadEmoji(
+            '../images/emoji/emoji-heart_desk.png',
+            '../images/emoji/emoji-heart_desk@2x.png',
+            '../images/emoji/emoji-heart_desk@3x.png'
+        );
+    }
+
+    // play
+    &.emoji-play {
+        @include uploadEmoji(
+            '../images/emoji/emoji-play_desk.png',
+            '../images/emoji/emoji-play_desk@2x.png',
+            '../images/emoji/emoji-play_desk@3x.png'
+        );
+    }
+
+    // clapper
+    &.emoji-clapper {
+        @include uploadEmoji(
+            '../images/emoji/emoji-clapper_desk.png',
+            '../images/emoji/emoji-clapper_desk@2x.png',
+            '../images/emoji/emoji-clapper_desk@3x.png'
+        );
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .emoji {
+        &.emoji--only-mobile {
+            @include boxSize(64px, 64px);
+
+            //spoke
+            &.emoji-spoke {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-spoke_mob.png',
+                    '../images/emoji/emoji-spoke_mob@2x.png',
+                    '../images/emoji/emoji-spoke_mob@3x.png'
+                );
+            }
+
+            //airplane
+            &.emoji-airplane {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-airplane_mob.png',
+                    '../images/emoji/emoji-airplane_mob@2x.png',
+                    '../images/emoji/emoji-airplane_mob@3x.png'
+                );
+            }
+
+            // book
+            &.emoji-book {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-book_mob.png',
+                    '../images/emoji/emoji-book_mob@2x.png',
+                    '../images/emoji/emoji-book_mob@3x.png'
+                );
+            }
+
+            // peace
+            &.emoji-peace {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-peace_mob.png',
+                    '../images/emoji/emoji-peace_mob@2x.png',
+                    '../images/emoji/emoji-peace_mob@3x.png'
+                );
+            }
+
+            // clock
+            &.emoji-clock {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-clock_mob.png',
+                    '../images/emoji/emoji-clock_mob@2x.png',
+                    '../images/emoji/emoji-clock_mob@3x.png'
+                );
+            }
+
+            // flag-uk
+            &.emoji-flag-uk {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-flag-uk_mob.png',
+                    '../images/emoji/emoji-flag-uk_mob@2x.png',
+                    '../images/emoji/emoji-flag-uk_mob@3x.png'
+                );
+            }
+
+            // fire
+            &.emoji-fire {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-fire_mob.png',
+                    '../images/emoji/emoji-fire_mob@2x.png',
+                    '../images/emoji/emoji-fire_mob@3x.png'
+                );
+            }
+
+            // blue
+            &.emoji-blue {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-blue_mob.png',
+                    '../images/emoji/emoji-blue_mob@2x.png',
+                    '../images/emoji/emoji-blue_mob@3x.png'
+                );
+            }
+
+            // gift
+            &.emoji-gift {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-gift_mob.png',
+                    '../images/emoji/emoji-gift_mob@2x.png',
+                    '../images/emoji/emoji-gift_mob@3x.png'
+                );
+            }
+
+            // orange
+            &.emoji-orange {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-orange_mob.png',
+                    '../images/emoji/emoji-orange_mob@2x.png',
+                    '../images/emoji/emoji-orange_mob@3x.png'
+                );
+            }
+
+            // mobile-phone
+            &.emoji-mobile-phone {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-mobile-phone_mob.png',
+                    '../images/emoji/emoji-mobile-phone_mob@2x.png',
+                    '../images/emoji/emoji-mobile-phone_mob@3x.png'
+                );
+            }
+
+            // microphone
+            &.emoji-microphone {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-microphone_mob.png',
+                    '../images/emoji/emoji-microphone_mob@2x.png',
+                    '../images/emoji/emoji-microphone_mob@3x.png'
+                );
+            }
+
+            // heart
+            &.emoji-heart {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-heart_mob.png',
+                    '../images/emoji/emoji-heart_mob@2x.png',
+                    '../images/emoji/emoji-heart_mob@3x.png'
+                );
+            }
+
+            // play
+            &.emoji-play {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-play_mob.png',
+                    '../images/emoji/emoji-play_mob@2x.png',
+                    '../images/emoji/emoji-play_mob@3x.png'
+                );
+            }
+
+            // clapper
+            &.emoji-clapper {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-clapper_mob.png',
+                    '../images/emoji/emoji-clapper_mob@2x.png',
+                    '../images/emoji/emoji-clapper_mob@3x.png'
+                );
+            }
+        }
+    } 
+    
+}
+
+@media screen and (min-width: 769px) { 
+    .emoji {
+        &.emoji--only-desctop {
+            @include boxSize(80px, 80px);
+
+            //spoke
+            &.emoji-spoke {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-spoke_desk.png',
+                    '../images/emoji/emoji-spoke_desk@2x.png',
+                    '../images/emoji/emoji-spoke_desk@3x.png'
+                );
+            }
+
+            //airplane
+            &.emoji-airplane {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-airplane_desk.png',
+                    '../images/emoji/emoji-airplane_desk@2x.png',
+                    '../images/emoji/emoji-airplane_desk@3x.png'
+                );
+            }
+
+             // book
+            &.emoji-book {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-book_desk.png',
+                    '../images/emoji/emoji-book_desk@2x.png',
+                    '../images/emoji/emoji-book_desk@3x.png'
+                );
+            }
+
+            // peace
+            &.emoji-peace {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-peace_desk.png',
+                    '../images/emoji/emoji-peace_desk@2x.png',
+                    '../images/emoji/emoji-peace_desk@3x.png'
+                );
+            }
+
+            // clock
+            &.emoji-clock {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-clock_desk.png',
+                    '../images/emoji/emoji-clock_desk@2x.png',
+                    '../images/emoji/emoji-clock_desk@3x.png'
+                );
+            }
+
+            // flag-uk
+            &.emoji-flag-uk {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-flag-uk_desk.png',
+                    '../images/emoji/emoji-flag-uk_desk@2x.png',
+                    '../images/emoji/emoji-flag-uk_desk@3x.png'
+                );
+            }
+
+            // fire
+            &.emoji-fire {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-fire_desk.png',
+                    '../images/emoji/emoji-fire_desk@2x.png',
+                    '../images/emoji/emoji-fire_desk@3x.png'
+                );
+            }
+
+            // gift
+            &.emoji-gift {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-gift_desk.png',
+                    '../images/emoji/emoji-gift_desk@2x.png',
+                    '../images/emoji/emoji-gift_desk@3x.png'
+                );
+            }
+
+            // blue
+            &.emoji-blue {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-blue_desk.png',
+                    '../images/emoji/emoji-blue_desk@2x.png',
+                    '../images/emoji/emoji-blue_desk@3x.png'
+                );
+            }
+
+            // orange
+            &.emoji-orange {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-orange_desk.png',
+                    '../images/emoji/emoji-orange_desk@2x.png',
+                    '../images/emoji/emoji-orange_desk@3x.png'
+                );
+            }
+
+            // mobile-phone
+            &.emoji-mobile-phone {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-mobile-phone_desk.png',
+                    '../images/emoji/emoji-mobile-phone_desk@2x.png',
+                    '../images/emoji/emoji-mobile-phone_desk@3x.png'
+                );
+            }
+
+            // microphone
+            &.emoji-microphone {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-microphone_desk.png',
+                    '../images/emoji/emoji-microphone_desk@2x.png',
+                    '../images/emoji/emoji-microphone_desk@3x.png'
+                );
+            }
+
+            // heart
+            &.emoji-heart {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-heart_desk.png',
+                    '../images/emoji/emoji-heart_desk@2x.png',
+                    '../images/emoji/emoji-heart_desk@3x.png'
+                );
+            }
+
+            // play
+            &.emoji-play {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-play_desk.png',
+                    '../images/emoji/emoji-play_desk@2x.png',
+                    '../images/emoji/emoji-play_desk@3x.png'
+                );
+            }
+
+            // clapper
+            &.emoji-clapper {
+                @include uploadEmoji(
+                    '../images/emoji/emoji-clapper_desk.png',
+                    '../images/emoji/emoji-clapper_desk@2x.png',
+                    '../images/emoji/emoji-clapper_desk@3x.png'
+                );
+            }
+        }
+    }
+    
+}
