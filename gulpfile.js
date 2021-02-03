@@ -55,14 +55,14 @@ function scripts() {
 
 // Функция кораентации стилей scss в css
 function styles() {
-    return src('app/scss/style.scss') // Путь к файлу scss
+    return src('app/scss/style.scss', { sourcemaps: true }) // Путь к файлу scss
         .pipe(scss({outputStyle: 'compressed'})) // Обработка плагином scss, сжать css (outputStyle: 'compressed')
         .pipe(concat('style.min.css')) // Переиминовать в style.min.css
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'], // автопрефиксер на 10 последних версий
             grid: true 
         }))
-        .pipe(dest('app/css')) // Куда сохранить корментированый фалй
+        .pipe(dest('app/css', { sourcemaps: true })) // Куда сохранить корментированый фалй
         .pipe(browserSync.stream()); // Запуск browser-sync
 }
 
