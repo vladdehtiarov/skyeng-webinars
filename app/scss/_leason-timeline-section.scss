@@ -125,7 +125,7 @@
         .sticker-numb {
             top: 159px;
             left: 17px;
-            transform: rotate(-14deg);
+            transform: rotate(-20deg);
             img {
                 width: 69px;
                 height: 69px;
@@ -135,6 +135,7 @@
         .sticker-img {
             top: -40px;
             left: 168px;
+            transform: rotate(-5deg);
             @include boxSize(100px, 100px);
             @include uploadEmoji(
                 '../images/emoji/emoji-play.png',
@@ -156,7 +157,8 @@
         .sticker-numb {
             top: 146px;
             left: 15px;
-            transform: rotate(-13deg);
+            transform: rotate(-20deg);
+
             img {
                 width: 54px;
                 height: 60px;
@@ -166,6 +168,8 @@
         .sticker-img {
             top: -54px;
             left: 146px;
+            transform: rotate(-6deg);
+
             @include boxSize(100px, 100px);
             @include uploadEmoji(
                 '../images/emoji/emoji-pen.png',
@@ -205,7 +209,7 @@
             background-position: top;
             background-size: auto;
             position: absolute;
-            top: -6%;
+            top: -5.3%;
             left: 0;
         }
         
@@ -220,8 +224,8 @@
 
             // Sticker
             &-sticker {
-                top: -86px;
-                left: 339px;
+                top: -70px;
+                left: 348px;
                 img {
                     width: 260px;
                 }
@@ -251,26 +255,29 @@
         &__step-items:nth-child(3) {
             .step-item__text {
                 width: 374px;
+                margin-top: 18px;
+                margin-left: 100px;
             }
 
             margin-top: -80px;
         }
 
         &__step-items:last-child {
-            margin-top: 41px;
-            margin-left: 145px;
+            margin-top: 46px;
+            margin-left: 137px;
+
         }
 
         // Image wrapper
         .step-item__img-wrapp {
-            width: 360px;
-            height: 240px;
+            width: 386px;
+            height: 263px;
         }
 
         // Text block
         .step-item__text {
             width: 360px;
-            margin-top: 26px;
+            margin-top: 38px;
             font-size: 40px;
             margin-right: 0;
             margin-left: auto;
@@ -287,9 +294,9 @@
         &__step-items:first-child {
             // sticker number
             .sticker-numb {
-                top: 168px;
-                left: -47px;
-                transform: rotate(12deg);
+                top: 198px;
+                left: -53px;
+                transform: rotate(9deg);
                 img {
                     width: 91px;
                     height: 91px;
@@ -299,9 +306,11 @@
 
         // Step 2
         &__step-items:nth-child(2) {
+            margin-top: 257px;
+            margin-left: 14px;
             // sticker number
             .sticker-numb {
-                top: 135px;
+                top: 165px;
                 left: -70px;
                 img {
                     width: 125px;
@@ -310,9 +319,16 @@
             }
             // sticker img 
             .sticker-img {
-                top: 20px;
-                left: 280px;
+                top: 3px;
+                left: 310px;
                 @include boxSize(180px, 180px);
+            }
+
+            .step-item__text {
+                
+                margin-top: 20px;
+                margin-left: 84px;
+
             }
         }
 
@@ -320,8 +336,9 @@
         &__step-items:nth-child(3) {
             // sticker number
             .sticker-numb {
+                top: 163px;
+                left: -16px;
 
-                left: -37px;
                 img {
                     width: 93px;
                     height: 103px;
@@ -330,7 +347,7 @@
             // sticker img 
             .sticker-img {
                 top: -113px;
-                left: 50px;
+                left: 36px;
                 @include boxSize(180px, 180px);
 
             }
@@ -340,14 +357,20 @@
         &__step-items:last-child {
             // sticker number
             .sticker-numb {
-                top: 148px;
-                left: -42px;
+                top: 170px;
+                left: -45px;
                 transform: rotate(0deg);
                 img {
                     width: 102px;
                     height: 92px;
                 }
             }
+
+            .step-item__text {
+                margin-top: 28px;
+
+            }
+            
         }
     }
 

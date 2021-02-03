@@ -51,7 +51,7 @@
         .success-info {
             max-width: 100%;
             height: 64px;
-            margin-top: 8px;
+            margin-top: 0;
             font-size: 64px;
             color: rgba($black, 0.48);
             // position: absolute;
@@ -64,7 +64,7 @@
             align-items: center;
             justify-content: center;
             position: absolute;
-            top: -98px;
+            top: -113px;
             right: 0;
 
             .emoji {

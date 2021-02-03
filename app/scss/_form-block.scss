@@ -14,7 +14,14 @@
         align-items: flex-start;
         justify-content: space-between;
         padding: 22px 24px 48px 24px;
-        margin-top: 120px;
+        margin-top: 152px;
+    }
+
+    .form {
+
+        @include responsive(desktop) {
+            margin-top: -6px;
+        }
     }
     
     // Content 
@@ -138,6 +145,11 @@
             @include responsive(desktop) {
                 width: 496px;
             }
+        }
+
+        .form-block__checkbox-link {
+            color: $blue_btn;
+            letter-spacing: -2px;
         }
 
         // hide default input styles

@@ -1,12 +1,26 @@
 // Footer styles
 
 .footer {
+    position: relative;
     width: 100%;
     padding: 32px 0 24px 0;
 
     .container {
     display: flex;
     flex-direction: column;
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 100px;
+        left: 10px;
+        font-size: 18px;
+        line-height: 32px;
+
+        a {
+            text-decoration: underline;
+            color: $black;
+        }
     }
 
     // Logo
@@ -54,13 +68,27 @@
     // Footer styles
 
     .footer {
-        padding-top: 96px;
+        padding-top: 110px;
         padding-bottom: 42px;
 
         .container {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+        }
+
+        &__link {
+            position: relative;
+            top: auto;
+            bottom: auto;
+            margin-left: 35px;
+            font-size: 24px;
+            line-height: 32px;
+
+            a {
+                text-decoration: underline;
+                color: $black;
+            }
         }
 
         // Logo

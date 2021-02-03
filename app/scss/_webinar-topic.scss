@@ -8,9 +8,8 @@
     @include responsive(desktop) {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-starts;
     }
-    
 
     // title
     &__title {
@@ -21,17 +20,11 @@
         font-size: 40px;
         line-height: 100%;
         color: $black;
-        .emoji {
-            display: none;
-        }
 
         @include responsive(desktop) {
             max-width: 660px;
-            margin-top: 0;
+            margin-top: 36px;
             font-size: 80px;
-            .emoji {
-                display: inline-block;
-            }
         }
     }
 
@@ -41,12 +34,16 @@
         &_rect {
             @include responsive(desktop) {
                 height: 475px;
+                margin-top: -58px;
+                margin-right: -32px;
             }
         }
 
         &_circle {
             @include responsive(desktop) {
                 height: 480px;
+                margin-top: -58px;
+                margin-right: 65px;
             }
         }
 
@@ -74,6 +71,15 @@
             &_circle {
                 @include coverPicture(376px, 376px);
                 border-radius: 50%;
+                transform: rotate(0deg);
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
         

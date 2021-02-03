@@ -19,6 +19,10 @@
     @media (min-width: 720px) {
       @content;
     }
+  } @else if $range == mobile {
+    @media (max-width: 719px) {
+      @content;
+    }
   }
 }
 
@@ -59,7 +63,42 @@
 }
 
 @mixin boxSize($w, $h) {
-    width: $w;
-    height: $h;
+  width: $w;
+  height: $h;
 }
+
+@mixin uploadImage($name, $resp: desk, $size:null) {
+  background-image: url('../images/emoji/emoji-#{$name}_#{$resp}#{$size}.png');
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin uploadRespEmoji($name, $resp:desk, $size:null) {
+
+  @include responsive(mobile) {
+    @include boxSize(64px, 64px);
+    @include uploadImage($name, mob);
+
+    @include retina(2x) {
+      @include uploadImage($name, mob, '@2x');
+    }
+    @include retina(3x) {
+      @include uploadImage($name, mob, '@3x');
+    }
+  }
+
+  @include responsive(desktop) {
+    @include boxSize(80px, 80px);
+    @include uploadImage($name, desk);
+
+    @include retina(2x) {
+      @include uploadImage($name, desk, '@2x');
+    }
+    @include retina(3x) {
+      @include uploadImage($name, desk, '@3x');
+    }
+  }
+}
+
+
 

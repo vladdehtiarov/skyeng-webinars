@@ -5,16 +5,26 @@
     // Webinars wrapper
     &__webinars-wrapp {
         width: 100%;
+        // margin-top: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        @include responsive(desktop) {
+            // margin-top: 80px;
+        }
     }
 
     // All items
     &__all-items {
         width: 300px;
         margin-top: 32px;
+
+        @include responsive(desktop) {
+            margin-top: 82px;
+            width: 360px;
+        }
     }
 
     .all-items__link {
@@ -34,16 +44,13 @@
         width: 300px;
         height: 451px;
         position: relative;
+
+        @include responsive(desktop) {
+            margin-top: 84px;
+            width: 360px;
+            height: 546px;
+        }
     }
-
-    // &__item:first-child {
-    //     .webinar-info__name {
-    //         a {
-    //             color: $blue_btn
-    //         }
-    //     }
-    // }
-
 
     // item hovver effects
     &__item:hover {
@@ -130,6 +137,23 @@
             line-height: 100%;
             margin-left: 0;
             margin-right: auto;
+
+            .webinar-info__time-date,
+            .webinar-info__time-time {
+                letter-spacing: -4px;
+            }
+        }
+
+        &__time_recording {
+
+            @include responsive(desktop) {
+                
+            }
+
+            .webinar-info__time-date,
+            .webinar-info__time-time {
+                color: rgba($black, 0.24);
+            }
         }
 
         // webinar name
@@ -152,6 +176,8 @@
         }
 
     }
+
+
 }
 
 // remove bg class
@@ -174,6 +200,36 @@
 // most popular webinar
 .most-popular-webinar {
     margin-top: 56px;
+
+    @include responsive(desktop) {
+        margin-top: 120px;
+    }
+
+    .webinars-section__item {
+        margin-top: 40px;
+        height: auto;
+
+        @include responsive(desktop) {
+            margin-top: 65px;
+        }
+    }
+
+    .webinars-section__item:nth-child(-n+3) {
+        margin-top: 32px;
+
+        @include responsive(desktop) {
+            margin-top: 48px;
+        }
+    }
+
+    .webinars-section__all-items {
+        margin-top: 32px;
+
+        @include responsive(desktop) {
+            margin-top: 74px;
+        }
+    }
+
     .webinar-image {
         background-color: $blue_2;
     }    
@@ -184,6 +240,24 @@
     font-size: 32px;
     line-height: 100%;
     font-weight: normal;
+}
+
+// Webinars-section_all
+.webinars-section_all {
+
+    .webinars-section__item {
+
+        @include responsive(desktop) {
+            margin-top: 80px;
+        }
+    }
+
+    .webinars-section__item:nth-child(-n+3) {
+    
+        @include responsive(desktop) {
+            margin-top: -7px;
+        }
+    }
 }
 
 @media screen and (min-width: 720px) {
@@ -202,22 +276,10 @@
             align-items: flex-start;
         }
 
-        // All items
-        &__all-items {
-            width: 360px;
-            margin-top: 48px;
-        }
-
         .all-items__link {
             font-size: 56px;
         }
 
-        // webinar item
-        &__item {
-            margin-top: 48px;
-            width: 360px;
-            height: 546px;
-        }
 
         // BG text
         .webinar-image__text {
@@ -232,7 +294,7 @@
             // Sticker
             &__sticker {
                 position: absolute;
-                top: -12%;
+                top: -11%;
                 left: 54%;
                 width: 208px;
                 height: 178px;

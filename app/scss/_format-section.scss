@@ -80,7 +80,7 @@
         width: 100%;
         max-width: 1160px;
         margin: 0 auto;
-        margin-top: 120px;
+        margin-top: 109px;
         height: 486px;
         padding: 24px;
         font-size: 40px;
@@ -103,22 +103,30 @@
             margin-bottom: 56px;
         }
 
+        &__blocks-text {
+            bottom: 10px;
+        }
+
         &__blocks-items:last-child {
             width: 541px;
             .format-section__blocks-sticker {
                 width: 304px;
                 height: 222px;
+                left: 45%;
+                top: -22px;
                 transform: translateX(-85%);
             }
             .format-section__blocks-text {
                 width: 100%;
+                left: -34px;
+                bottom: 16px;
             }
         }
 
         &__blocks-sticker{
             width: 480px;
             height: 217px;
-            left: -50%;
+            left: -54%;
             transform: translateX(50%);
         }
     }

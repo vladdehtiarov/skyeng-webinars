@@ -23,10 +23,10 @@
         position: relative;
 
         @include responsive(desktop) {
-            width: 360px;
-            height: 327px;
+            width: 384px;
+            height: 351px;
             margin-top: 0;
-            padding: 24px;
+            padding: 32px;
         }
 
 
@@ -49,8 +49,8 @@
 
             @include responsive(desktop) {
                 @include boxSize(256px, 83px);
-                top: -67px;
-                left: 50%;
+                top: -72px;
+                left: 54%;
                 transform: translateX(-50%) rotate(-17.07deg);
 
             }
@@ -63,6 +63,21 @@
 
         @include responsive(desktop) {
             margin-bottom: 0;
+            margin-left: -28px;
+        }
+    }
+
+    &__item:nth-child(2) {
+
+        @include responsive(desktop) {
+            margin-left: 20px;
+        }
+    }
+
+    &__item:last-child {
+
+        @include responsive(desktop) {
+            margin-right: -15px;
         }
     }
 
@@ -85,5 +100,76 @@
                 object-fit: cover;
             }
         }    
+    }
+
+    // item image
+    &__item_image {
+        padding: 0;
+
+        .popup-youtube {
+            width: inherit;
+            height: inherit;
+        }
+
+        .about-webinar__item-image {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .about-webinar__item-play-btn {
+                width: 171px;
+                height: 40px;
+                background: rgba(0, 0, 0, 0.7);
+                border-radius: 20px;
+                z-index: 10;
+                position: absolute;
+                left: 24px;
+                bottom: 28px;
+
+                .item-play-btn__inner {
+                    display: flex;
+                    width: inherit;
+                    height: inherit;
+                    padding: 0 14px;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.about-webinar_speaker {
+    position: relative;
+
+    @include responsive(desktop) {
+        margin-top: 200px;
+    }
+
+    .about-webinar__item:first-child {
+        background-color: $blue_2;
+    }
+
+    .about-webinar_title {
+        display: none;
+
+        @include responsive(desktop) {
+            display: block;
+            position: absolute;
+            top: -95px;
+            left: 22px;
+        }
+        
     }
 }

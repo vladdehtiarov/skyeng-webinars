@@ -134,6 +134,8 @@
         &__wrapper {
             height: auto;
             padding: 24px;
+            padding-top: 2px;
+            padding-bottom: 38px;
             flex-direction: row;
             justify-content: space-between;
         }
@@ -182,22 +184,33 @@
         &__form {
             width: 352px;
             margin: 0;
+            margin-top: 14px;
         }
 
         &__form-title {
+            margin-top: 7px;
             font-size: 40px;
+        }
+
+        .form {
+            margin-top: 17px;
         }
     }
 
+
     // Last form styles
     .last-form {
+        margin-top: 130px;
 
         .form-section__wrapper {
             align-items: flex-start;
+            padding: 24px;
+            padding-bottom: 36px;
         }
 
         // Title styles
         .form-section__title {
+            
             p {
                 width: 100%;
             }
@@ -207,8 +220,8 @@
             display: block;
             z-index: 10;
             transform: rotate(-11deg);
-            top: 78%;
-            left: 5%;
+            top: 79%;
+            left: 6%;
             @include boxSize(180px, 180px);
             @include uploadEmoji(
                 '../images/emoji/emoji-horns.png',
@@ -218,8 +231,8 @@
         }
 
         .sticker-angel {
-            top: 48%;
-            left: 22%;
+            top: 50%;
+            left: 24%;
             z-index: 10;
             @include boxSize(180px, 180px);
         }
@@ -228,6 +241,10 @@
         .form-section__title-sticker {
             top: 75%;
             left: 12%;
+        }
+
+        .form-section__form-title {
+            margin-top: 0;
         }
 
         .form-section__form {

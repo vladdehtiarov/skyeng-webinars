@@ -37,6 +37,7 @@ h2 {
     }
 }
 
+
 .container {
     width: 90%;
     min-width: 300px;
@@ -76,6 +77,15 @@ h2 {
     line-height: 100%;
     letter-spacing: -0.1px;
     color: $gray;
+
+    img {
+        width: 140px;
+        height: auto;
+
+        @include responsive(desktop) {
+            width: 250px;
+        }
+    }
 }
 
 .section-heading {
@@ -90,6 +100,10 @@ h2 {
 .page-title {
     width: 100%;
     position: relative;
+
+    @include responsive(desktop) {
+        margin-top: 30px;
+    }
 
     // title
     &__title {
@@ -111,6 +125,26 @@ h2 {
             height: inherit;
             object-fit: cover;
             object-position: center;
+        }
+    }
+
+    .emoji {
+        width: 40px;
+        height: 40px;
+        margin: -10px;
+
+        @include responsive(desktop) {
+            width: 80px;
+            height: 80px;
+            margin: -14px;
+        }
+    }
+}
+
+.page-title_max-width {
+    .page-title__title {
+        @include responsive(desktop) {
+            width: 100%;
         }
     }
 }
