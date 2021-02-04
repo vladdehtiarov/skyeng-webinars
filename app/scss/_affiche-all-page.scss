@@ -18,29 +18,24 @@
             @include boxSize(40px, 40px);
         }
 
+        .emoji--only-desktop {
+            @include responsive(desktop) {
+                @include boxSize(80px, 80px);
+            }
+        }
+
     }
 
     .section-heading {
         .emoji--only-mobile {
             @include boxSize(40px, 40px);
         }
+
+        .emoji--only-desktop {
+            @include responsive(desktop) {
+                @include boxSize(80px, 80px);
+            }
+        }
     }
 }
-
-@media screen and (min-width: 720px) { 
-    // affiche-all-page
-    .affiche-all-page {
-
-        .page-title {
-            .emoji--only-desctop {
-                @include boxSize(80px, 80px);
-            }
-        }
-
-        .section-heading {
-            .emoji--only-desctop {
-                @include boxSize(80px, 80px);
-            }
-        }
-    }
-}    
+  

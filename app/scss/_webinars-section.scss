@@ -12,7 +12,16 @@
         align-items: center;
 
         @include responsive(desktop) {
-            // margin-top: 80px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    &__title {
+        @include responsive(desktop) {
+            font-size: 64px;
         }
     }
 
@@ -32,6 +41,10 @@
         line-height: 100%;
         text-decoration: underline;
         color: $black;
+
+        @include responsive(desktop) {
+            font-size: 56px;
+        }
     }
 
     .all-items__link:hover {
@@ -57,13 +70,13 @@
 
         .webinar-image__text {
             opacity: 1;
-            transition: all 0.2s ease-in;
+            // transition: all 0.2s ease-in;
 
         }
         .webinar-image {
             picture {
                 opacity: 0;
-                transition: all 0.2s ease-in;
+                // transition: all 0.2s ease-in;
             }
         }
     }
@@ -79,7 +92,11 @@
         color: rgba($black, 0.48);
         opacity: 0;
         z-index: 10;
-        transition: all 0.2s ease-in;
+        // transition: all 0.2s ease-in;
+
+        @include responsive(desktop) {
+            font-size: 40px;
+        }
     }
 
     // webinar image
@@ -91,11 +108,16 @@
         overflow: hidden;
         background-color: $purple-3;
 
+        @include responsive(desktop) {
+            width: 360px;
+            height: 360px;
+        }
+
         picture {
             width: inherit;
             height: inherit;
             opacity: 1;
-            transition: all 0.2s ease-in;
+            // transition: all 0.2s ease-in;
 
 
             img {
@@ -116,6 +138,15 @@
             height: 130px;
             overflow: hidden;
             z-index: 10;
+
+            @include responsive(desktop) {
+                position: absolute;
+                top: -11%;
+                left: 54%;
+                width: 208px;
+                height: 178px;
+            }
+
             img {
                 width: inherit;
                 height: inherit;
@@ -130,6 +161,10 @@
     .webinar-info {
         width: 100%;
         margin-top: 16px;
+
+        @include responsive(desktop) {
+            margin-top: 24px;
+        }
 
         // webinar date, time
         &__time {
@@ -162,6 +197,11 @@
             margin-top: 8px;
             line-height: 120%;
 
+            @include responsive(desktop) {
+                width: 88%;
+                font-size: 32px;
+            }
+
             a {
                 text-decoration: underline;
                 text-align: left;
@@ -184,7 +224,7 @@
 .webinars-section__item_remove-bg {
     .webinar-image__text {
         opacity: 1;
-        transition: all 0.2s ease-in;
+        // transition: all 0.2s ease-in;
 
     }
 
@@ -192,7 +232,7 @@
 
         picture {
             opacity: 0;
-            transition: all 0.2s ease-in;
+            // transition: all 0.2s ease-in;
         }
     }
 }
@@ -256,61 +296,6 @@
     
         @include responsive(desktop) {
             margin-top: -7px;
-        }
-    }
-}
-
-@media screen and (min-width: 720px) {
-    // Webinar section styles
-    .webinars-section {
-
-        &__title {
-            font-size: 64px;
-        }
-
-        // Webinars wrapper
-        &__webinars-wrapp {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-
-        .all-items__link {
-            font-size: 56px;
-        }
-
-
-        // BG text
-        .webinar-image__text {
-            font-size: 40px;
-        }
-
-        // webinar image
-        .webinar-image {
-            width: 360px;
-            height: 360px;
-
-            // Sticker
-            &__sticker {
-                position: absolute;
-                top: -11%;
-                left: 54%;
-                width: 208px;
-                height: 178px;
-            }
-
-        }
-
-        // info 
-        .webinar-info {
-            margin-top: 24px;
-
-            // webinar name
-            &__name {
-                width: 88%;
-                font-size: 32px;
-            }
         }
     }
 }

@@ -23,7 +23,24 @@
     @media (max-width: 719px) {
       @content;
     }
+  } @else if $range == tablet {
+    @media (min-width: 880px) {
+      @content;
+    }
+  } @else if $range == resp {
+    @media (min-width: 720px) and (max-width: 1080px) {
+      @content;
+    }
+  } @else if $range == bigDesk {
+    @media (min-width: 1030px) {
+      @content;
+    }
+  } @else if $range == smallDesk {
+    @media (min-width: 900px) {
+      @content;
+    }
   }
+  
 }
 
 

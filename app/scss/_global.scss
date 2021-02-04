@@ -42,6 +42,11 @@ h2 {
     width: 90%;
     min-width: 300px;
     margin: 0 auto;
+
+    @include responsive(desktop) {
+        width: 90%;
+        max-width: 1159px;
+    }
 }
 
 .hide {
@@ -56,11 +61,21 @@ h2 {
     justify-content: space-between;
     align-items: center;
 
+    @include responsive(desktop) {
+        width: 455px;
+    }
+
     &__link {
         width: 122px;
         height: 29px;
         position: relative;
         overflow: hidden;
+
+        @include responsive(desktop) {
+            width: 184px;
+            height: 29px;
+        }
+
         img {
             width: inherit;
             height: inherit;
@@ -77,6 +92,10 @@ h2 {
     line-height: 100%;
     letter-spacing: -0.1px;
     color: $gray;
+
+    @include responsive(desktop) {
+        font-size: 32px;
+    }
 
     img {
         width: 140px;
@@ -110,6 +129,11 @@ h2 {
         font-size: 40px;
         line-height: 100%;
         font-weight: normal;
+
+        @include responsive(desktop) {
+            width: 80%;
+            font-size: 80px;
+        }
     }
     
     // sticker
@@ -119,6 +143,14 @@ h2 {
         position: absolute;
         top: 80px;
         left: 224px;
+
+        @include responsive(desktop) {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 82px;
+            left: 617px;
+        }
 
         img {
             width: inherit;
@@ -149,29 +181,4 @@ h2 {
     }
 }
 
-@media screen and (min-width: 720px) {
-    .skyeng-logo {
-        width: 455px;
-
-        &__link {
-            width: 184px;
-            height: 29px;
-            position: relative;
-            overflow: hidden;
-            img {
-                width: inherit;
-                height: inherit;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                object-fit: contain;
-            }
-        }
-    }
-    
-    .client-logo {
-        font-size: 32px;
-    }
-}
-// affiche page
 
