@@ -71,7 +71,7 @@ function build() {
     return src([
         'app/css/style.min.css',
         'app/fonts/**/*',
-        'app/js/main.min.js',
+        'app/js/*.min.js',
         'app/*.html'
     ], {base: 'app'}) // Базовая директория (для переброса файлов в папках)
         .pipe(dest('docs')); // Сохранить в папку dist
