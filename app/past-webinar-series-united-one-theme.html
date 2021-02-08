@@ -9,7 +9,7 @@
     
     <script defer src="js/main.min.js"></script>
 </head>
-<body class="affiche-page">
+<body>
 
     <!-- Header -->
     <header class="header">
@@ -35,7 +35,12 @@
                     Вебинары и мастер-классы о правильном произношении описание максимум в 4 строки
                     <span class="emoji emoji-heart"></span>
                 </h1>
+
             </section>
+
+            <div class="page-subtitle">
+                Вебинары уже прошли, но мы для вас сохранили записи
+            </div>
 
             <!-- Webinar section -->
             <section class="webinars-section webinar-for-english">
@@ -232,7 +237,7 @@
                     <!-- webinar item END -->
 
                     <div class="webinars-section__all-items">
-                        <a href="../affiche-all.html"class="all-items__link">Получить записи одного или нескольких вебинаров →</a>
+                        <a href="#send-form"class="all-items__link">Получить записи одного или нескольких вебинаров →</a>
                     </div>
 
                 </div>
@@ -481,7 +486,7 @@
 
             <!-- Form block -->
             
-            <section class="form-block form-block_registr">
+            <section class="form-block form-block_registr" id="send-form">
                 <div class="form-block__content">
                     <!-- Title -->
                     <div class="form-block__title">
@@ -530,7 +535,7 @@
                             <input type="text" class="form-name form-input" name="name" required placeholder="Имя">
                             <input type="text" class="form-emal form-input" name="emai" required placeholder="E-mail">
                             <input type="text" class="form-phone form-input" name="phone" required placeholder="Телефон">
-                            <button type="submit" class="form-btn">Участвовать</button>
+                            <button href="#small-dialog" type="submit" class="form-btn">Участвовать</button>
                         </div>
                     </form>
                     <div class="form-error"></div> 
@@ -565,7 +570,21 @@
 
 
 
-
+        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+            <div class="popup-text">
+                Напомнить вам о вебинаре? 
+                <span class="emoji emoji-fire"></span>
+            </div>
+            <a href="#" class="popup-tg">
+                <div class="popup-btn">
+                    <svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.81295 11.3933L28.8096 0.984329C30.0626 0.531662 31.1569 1.29 30.7509 3.18466L30.7533 3.18233L26.1566 24.838C25.8159 26.3733 24.9036 26.7467 23.6273 26.0233L16.6273 20.8643L13.2509 24.117C12.8776 24.4903 12.5626 24.8053 11.8393 24.8053L12.3363 17.6817L25.3096 5.96133C25.8743 5.46433 25.1836 5.18433 24.4393 5.679L8.40695 15.773L1.49561 13.617C-0.00472111 13.141 -0.0373874 12.1167 1.81295 11.3933Z" fill="white"/>
+                    </svg>
+                    Telegram
+                </div>
+            </a>                
+        </div>
     </main>
     <!-- Main END -->
 
@@ -593,6 +612,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
     <script>
         $('.master-class-section__slider .slider').slick({
             infinite: true,
@@ -619,6 +639,22 @@
                 }
             ]
         });
+
+        $('.form-btn').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+            
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+	    });
     </script>
 </body>
 </html>

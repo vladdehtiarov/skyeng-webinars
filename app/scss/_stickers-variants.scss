@@ -1,0 +1,133 @@
+
+.stickers-variant_0 {
+    .sticker-picture {
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        @include responsive(desktop) {
+            width: 100%;
+            top: 216px;
+            left: -122px;
+        }
+        
+        img {
+            width: 315px;
+
+            @include responsive(desktop) {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .sticker-picture_circle {
+        width: 250px;
+        top: 172px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        picture,
+        img {
+            width: inherit;
+        }
+
+        @include responsive(desktop) {
+            width: 508px;
+            top: 227px;
+            left: -112px;
+            transform: translateX(0);
+        }
+    }
+}
+    
+
+.stickers-variant_1 {
+
+    .sticker-picture {
+        top: 230px;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.6) rotate(6.7deg);
+        
+        @include responsive(desktop) {
+            top: 270px;
+            left: 130px;
+            transform: translate(0) scale(1) rotate(6.7deg);
+        }
+    }
+
+
+}
+
+
+.stickers-variant_2 {
+
+    @include responsive(desktop) {
+        .webinar-topic__img-box_rect {
+            margin-right: -14px;
+            top: 24px;
+            transform: rotate(-1deg);
+        }
+    }
+
+    .sticker-picture {
+        top: 0;
+        left: 50%;
+        transform: translate(-60%, -15%) scale(0.5);
+        
+        @include responsive(desktop) {
+            top: 138px;
+            left: -68px;
+            transform: translate(0) scale(1);
+        }
+    }
+
+}
+
+.stickers-variant_3 {
+
+    @include responsive(desktop) {
+        .webinar-topic__img-box_rect {
+            margin-right: -30px;
+            top: 24px;
+            transform: rotate(-1deg);
+        }
+    }
+
+    .sticker-picture {
+        top: 0;
+        left: 50%;
+        transform: translate(-60%, -15%) scale(0.5);
+        
+        @include responsive(desktop) {
+            top: 152px;
+            left: -32px;
+            transform: translate(0) scale(1);
+        }
+    }
+
+}
+
+.stickers-variant_4 {
+
+    @include responsive(desktop) {
+        .webinar-topic__img-box_rect {
+            margin-right: -30px;
+            top: 24px;
+            transform: rotate(-1deg);
+        }
+    }
+
+    .sticker-picture {
+        top: 0;
+        left: 50%;
+        transform: translate(-60%, -15%) scale(0.5);
+        
+        @include responsive(desktop) {
+            top: 153px;
+            left: -50px;
+            transform: translate(0) scale(1);
+        }
+    }
+
+}

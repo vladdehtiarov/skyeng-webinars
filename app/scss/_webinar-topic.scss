@@ -3,12 +3,19 @@
 .webinar-topic {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     @include responsive(desktop) {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-starts;
+        flex-direction: row;
+    }
+    
+    .emoji {
+        @include responsive(desktop) {
+            margin: 0 -6px;
+        }
     }
 
     // title
@@ -28,6 +35,14 @@
         }
     }
 
+    &__title_circle {
+        margin-top: 0;
+
+        @include responsive(desktop) {
+            margin-top: 36px;
+        }
+    }
+
     // Img box
     &__img-box {
 
@@ -35,15 +50,18 @@
             @include responsive(desktop) {
                 height: 475px;
                 margin-top: -58px;
-                margin-right: -32px;
+                margin-right: -44px;
+                top: -14px;
             }
+
         }
 
         &_circle {
             @include responsive(desktop) {
                 height: 480px;
                 margin-top: -58px;
-                margin-right: 65px;
+                margin-right: 50px;
+                top: -23px;
             }
         }
 
@@ -64,22 +82,35 @@
             transform: rotate(-4.21deg);
 
             &_rect {
-                @include coverPicture(460px, 310px);
+                @include coverPicture(484px, 334px);
                 border-radius: 16px;
             }
-    
-            &_circle {
-                @include coverPicture(376px, 376px);
+
+        }
+
+        &_circle {
+            display: block;
+            @include coverPicture(225px, 225px);
+            margin: 0 auto;
+            margin-top: 6px;
+            top: -22px;
+            border-radius: 50%;
+            transform: rotate(0deg);
+            position: relative;
+            border: 8px solid $white; 
+            
+            @include responsive(desktop) {
+                @include coverPicture(400px, 400px);
                 border-radius: 50%;
                 transform: rotate(0deg);
                 position: relative;
+            }
 
-                img {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
         
